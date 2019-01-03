@@ -14,19 +14,19 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "react-scripts test --updateSnapshot  --watchAll",
+    "eject": "react-scripts eject",
+    "test:coverage": "react-scripts test --updateSnapshot --coverage"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
+  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"],
   "devDependencies": {
+    "coveralls": "^3.0.2",
     "redux-logger": "^3.0.6"
+  },
+  "jest": {
+    "collectCoverageFrom": ["src/**/*.{js,jsx}", "!src/index.js"]
   }
 }
