@@ -1,0 +1,25 @@
+.notification {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  text-align: center;
+  padding: 0.2em;
+  font-size: 1.2rem;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+
+  &.success {
+    color: #305c3d;
+    border-left: 4px solid #305c3d;
+    background-color: #bfe1c9;
+  }
+
+  &.danger {
+    background-color: #e1bec7;
+    color: #e3342f;
+    border-left: 4px solid #e3342f;
+  }
+}
