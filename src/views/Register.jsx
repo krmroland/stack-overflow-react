@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { Form, Input } from 'forms';
 import AuthLayout from 'containers/layouts/Auth';
-import { redirectsIfAuthenticated } from 'utils/authentication';
 import { mapActionsToProps } from 'store/helpers';
 import { loginUser } from 'store/actions/authentication';
 
@@ -38,6 +37,4 @@ const RegisterPage = ({ authenticate }) => (
   </AuthLayout>
 );
 
-export default redirectsIfAuthenticated(
-  connect(null, mapActionsToProps({ authenticate: loginUser }))(RegisterPage),
-);
+export default connect(null, mapActionsToProps({ authenticate: loginUser }))(RegisterPage);

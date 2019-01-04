@@ -6,12 +6,10 @@ export const loginUser = ({ name, token }) => (dispatch, getState, http) => {
   // we will set the token every time a user is logged in
   http.setToken(token);
 
-  dispatch(setUser({name,token}));
+  dispatch(setUser({ name, token }));
 };
 
-export const logoutUser = history => (dispatch, getState, http) => {
-  window.Notify.success('You were successfully logged out of the system');
-  history.push('/');
+export const logoutUser = () => (dispatch, getState, http) => {
   // we will clear any available tokens
   http.clearToken();
 

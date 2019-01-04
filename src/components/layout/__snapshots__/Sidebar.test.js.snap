@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sidebar tests  It renders the same sidebar 1`] = `
+<aside>
+  <section
+    className="d-flex flex-column align-center bg-white py-2"
+  >
+    <img
+      alt="user avatar"
+      className="h-150 rounded"
+      src="user.png"
+    />
+    <h5
+      className="fw-600"
+    >
+      Some user
+    </h5>
+  </section>
+  <nav
+    className="sidebar-links"
+  >
+    <a
+      aria-current="page"
+      className="sidebar-link active"
+      href="/"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      <i
+        className="sidebar-link-icon"
+      >
+        <svg
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M7 5H5v14h14V5h-2v10a1 1 0 0 1-1.45.9L12 14.11l-3.55 1.77A1 1 0 0 1 7 15V5zM5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2zm4 2v8.38l2.55-1.27a1 1 0 0 1 .9 0L15 13.38V5H9z"
+          />
+        </svg>
+      </i>
+      <span
+        className="sidebar-link-text"
+      >
+        Questions
+      </span>
+    </a>
+    <a
+      aria-current={null}
+      className="sidebar-link"
+      href="/newQuestion"
+      onClick={[Function]}
+    >
+      <i
+        className="sidebar-link-icon"
+      >
+        <svg
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M17 11a1 1 0 0 1 0 2h-4v4a1 1 0 0 1-2 0v-4H7a1 1 0 0 1 0-2h4V7a1 1 0 0 1 2 0v4h4z"
+          />
+        </svg>
+      </i>
+      <span
+        className="sidebar-link-text"
+      >
+        New Question
+      </span>
+    </a>
+    <a
+      aria-current={null}
+      className="sidebar-link"
+      href="/profile"
+      onClick={[Function]}
+    >
+      <i
+        className="sidebar-link-icon"
+      >
+        <svg
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 12a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm9 11a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v2z"
+          />
+        </svg>
+      </i>
+      <span
+        className="sidebar-link-text"
+      >
+        Profile
+      </span>
+    </a>
+    <a
+      className="sidebar-link"
+      href="/login"
+    >
+      <i
+        className="sidebar-link-icon"
+      >
+        <svg
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.85 17.56a1.5 1.5 0 0 1-1.06.44H10v.5c0 .83-.67 1.5-1.5 1.5H8v.5c0 .83-.67 1.5-1.5 1.5H4a2 2 0 0 1-2-2v-2.59A2 2 0 0 1 2.59 16l5.56-5.56A7.03 7.03 0 0 1 15 2a7 7 0 1 1-1.44 13.85l-1.7 1.71zm1.12-3.95l.58.18a5 5 0 1 0-3.34-3.34l.18.58L4 17.4V20h2v-.5c0-.83.67-1.5 1.5-1.5H8v-.5c0-.83.67-1.5 1.5-1.5h1.09l2.38-2.39zM18 9a1 1 0 0 1-2 0 1 1 0 0 0-1-1 1 1 0 0 1 0-2 3 3 0 0 1 3 3z"
+          />
+        </svg>
+      </i>
+      <span
+        className="sidebar-link-text"
+      >
+        Sign Out
+      </span>
+    </a>
+  </nav>
+</aside>
+`;

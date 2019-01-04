@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconBook, IconCheck } from 'components/icons';
-
+import { redirectsIfAuthenticated } from 'utils/authentication';
 const Auth = ({ children }) => (
   <main id="Auth" className="columns shadow-lg">
     <section className="column-5  d-flex justify-center align-center bg-dark p-3  text-white flex-column">
@@ -33,4 +33,4 @@ const Auth = ({ children }) => (
   </main>
 );
 
-export default Auth;
+export default redirectsIfAuthenticated(Auth);

@@ -5,6 +5,7 @@ import NProgress from 'nprogress';
 import Http from 'utils/Http';
 import { get } from 'lodash';
 import { activateLoading, deactivateLoading } from './actions/ui';
+import { logoutUser } from './actions/authentication';
 import { API_URL } from 'utils/constants';
 import Notifications from './helpers/Notifications';
 import rootReducer from './reducers';
@@ -41,7 +42,10 @@ http.onPass(response => {
 /* istanbul ignore next */
 http.onFail(error => {
   const message = error && (error.detail || error.message);
+
   if (message) window.Notify.error(message);
+  // logout the user
+  if (message === 'Token has expired') store.dispatch(logoutUser());
 });
 // we will temporarily set the token from the local storage if it exists
 http.setToken(get(JSON.parse(localStorage.getItem('user')), 'token'));

@@ -1550,44 +1550,6 @@ label {
   line-height: 2;
 }
 
-#JS-Sidebar {
-  position: fixed;
-  top: 75px;
-  bottom: 0;
-  left: 0;
-}
-#JS-Sidebar .sidbar-links {
-  color: #f8f8f8;
-  font-family: 'Merriweather', serif;
-  font-size: 3rem;
-}
-#JS-Sidebar .sidebar-link {
-  color: #f8f8f8;
-  display: flex;
-  align-items: center;
-  font-size: 1.1rem;
-  padding: 0.25em 0.5em;
-}
-#JS-Sidebar .sidebar-link:hover {
-  text-decoration: none;
-  background-color: #181818;
-}
-#JS-Sidebar .sidebar-link-icon svg {
-  height: 1.5rem;
-  width: 1.5rem;
-  margin-bottom: -0.25em;
-}
-#JS-Sidebar .sidebar-link-text {
-  padding-left: 0.5em;
-}
-#JS-Sidebar .active {
-  border-right: 6px solid #29ff6a;
-  background-color: #181818;
-}
-#JS-Sidebar .active svg {
-  fill: #29ff6a;
-}
-
 #Questions .question-filter {
   display: block;
   color: #b8c2cc;
@@ -3439,6 +3401,7 @@ label {
 .width-full {
   width: 100%;
 }
+
 form {
   width: 100%;
 }

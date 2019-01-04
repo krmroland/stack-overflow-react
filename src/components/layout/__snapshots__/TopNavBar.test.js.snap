@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TopNavBar tests  It renders the same top navigation bar 1`] = `
+<header
+  className="text-white p-2 bg-dark h-75 fixed top-0 left-0 right-0 border-t-2 border-b-2 border-light shadow-lg"
+>
+  <div
+    className="columns align-center"
+  >
+    <div
+      className="column-3"
+    >
+      <section
+        className="d-flex  align-center has-icon"
+      >
+        <i
+          className="d-flex icon-4 fill-accent-light"
+        >
+          <svg
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7 5H5v14h14V5h-2v10a1 1 0 0 1-1.45.9L12 14.11l-3.55 1.77A1 1 0 0 1 7 15V5zM5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2zm4 2v8.38l2.55-1.27a1 1 0 0 1 .9 0L15 13.38V5H9z"
+            />
+          </svg>
+        </i>
+        <h5
+          className="fw-600 text-upper text-center spacing-2 pl-2"
+        >
+          Stackoverflow
+        </h5>
+      </section>
+    </div>
+    <div
+      className="column-6 px-4 d-none-md"
+    >
+      <div
+        className="d-flex"
+      >
+        <input
+          className="input"
+          placeholder="Search the forum"
+          type="text"
+        />
+        <button
+          className="btn btn-light"
+        >
+          Search
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+`;

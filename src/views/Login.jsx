@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 import { mapActionsToProps } from 'store/helpers';
 import { Form, Input } from 'forms';
 import AuthLayout from 'containers/layouts/Auth';
-import { redirectsIfAuthenticated } from 'utils/authentication';
 import { loginUser } from 'store/actions/authentication';
 
 const LoginPage = ({ authenticate }) => (
@@ -36,6 +35,4 @@ const LoginPage = ({ authenticate }) => (
   </AuthLayout>
 );
 
-export default redirectsIfAuthenticated(
-  connect(null, mapActionsToProps({ authenticate: loginUser }))(LoginPage),
-);
+export default connect(null, mapActionsToProps({ authenticate: loginUser }))(LoginPage);
