@@ -10,7 +10,7 @@ export default ({ user }) => (
       <h5 className="fw-600">{user.name}</h5>
     </section>
     <nav className="sidebar-links">
-      <NavLink to="/" className="sidebar-link">
+      <NavLink to="/" className="sidebar-link" exact>
         <i className="sidebar-link-icon">
           <IconBook />
         </i>
