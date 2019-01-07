@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { IconBook, IconPlus, IconUser, IconKey } from 'components/icons';
 import userImage from 'assets/user.png';
 
-export default ({ user }) => (
+export default ({ user, logout }) => (
   <aside>
     <section className="d-flex flex-column align-center bg-white py-2">
       <img src={userImage} alt="user avatar" className="h-150 rounded" />
@@ -28,7 +28,7 @@ export default ({ user }) => (
         </i>
         <span className="sidebar-link-text">Profile</span>
       </NavLink>
-      <a href="/login" className="sidebar-link">
+      <a href="/login" className="sidebar-link" onClick={logout}>
         <i className="sidebar-link-icon">
           <IconKey />
         </i>

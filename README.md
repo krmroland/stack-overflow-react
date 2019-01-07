@@ -1,6 +1,37 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Stack overflow lite web
+[![Coverage Status](https://coveralls.io/repos/github/krmroland/stack-overflow-react/badge.svg?branch=develop)](https://coveralls.io/github/krmroland/stack-overflow-react?branch=develop)
+[![Maintainability](https://api.codeclimate.com/v1/badges/9991caf46abfd4e4fe87/maintainability)](https://codeclimate.com/github/krmroland/stack-overflow-react/maintainability)
 
-## Available Scripts
+This repository contains the `UI` for the [`Stack overflow lite API`](https://github.com/krmroland/stackoverflow-lite-ui) 
+
+#### Demo
+A working demo is hosted [here](https://andela-stackoverflow-ui.herokuapp.com/login)
+
+![demo image](demo.gif "Demo")
+
+#### Developer Notes
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### Requirements
+Ensure that you have the following tools available locally on your machine
+
+-   [Node js](https://nodejs.org/en/), a JavaScript runtime built on Chrome's V8 JavaScript engine.
+-   [A package manager](https://en.wikipedia.org/wiki/Package_manager) ([npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/lang/en/)) for installing  **webpack** and its dependencies
+-   [Git](https://git-scm.com/) , a Version Control System
+
+#### Setup
+- Clone the repo locally to your machine by running `git clone https://github.com/krmroland/web-stack-overflow-lite.git`
+
+#### Install Dependencies
+While still in the terminal run `npm install` or  `yarn` depending on which package manager you have installed .
+
+#### Building the UI templates
+While in the terminal in the `UI` directory
+ 1. `npm run build` or `yarn run production ` to compile `.hbs` ,`css`,`js`, and images
+ 2. `npm run production` or `yarn run production` to compile `.hbs`  ,`css`,`js`,`images` and minify them
+ 3. `npm run watch` or `yarn run watch` to set up a local development server and watch all the files for changes and live reload
+
+
+### Available Scripts
 
 In the project directory, you can run:
 
